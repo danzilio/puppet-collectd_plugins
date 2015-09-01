@@ -1,8 +1,6 @@
 # `collectd_plugins`
 This is a community-maintained collection of plugin configurations for `collectd` based on the [collectd](https://github.com/puppet-community/puppet-collectd) module.
 
-# Configurable Plugins
-
 Parameters will vary widely between plugins. See the collectd
 documentation for each plugin for configurable attributes.
 
