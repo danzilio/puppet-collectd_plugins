@@ -21,7 +21,7 @@ class collectd_plugin::genericjmx (
   concat::fragment {
     'collectd_plugin_genericjmx_conf_header':
       order   => '00',
-      content => template('collectd/plugin/genericjmx.conf.header.erb'),
+      content => template('collectd_plugins/plugin/genericjmx.conf.header.erb'),
       target  => $config_file;
     'collectd_plugin_genericjmx_conf_footer':
       order   => '99',

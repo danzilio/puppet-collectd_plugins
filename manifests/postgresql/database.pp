@@ -24,6 +24,6 @@ define collectd_plugin::postgresql::database (
     ensure  => $ensure,
     order   => '50',
     target  => "${conf_dir}/postgresql-config.conf",
-    content => template('collectd/plugin/postgresql/database.conf.erb'),
+    content => template('collectd_plugins/plugin/postgresql/database.conf.erb'),
   }
 }

@@ -18,7 +18,7 @@ class collectd_plugin::network (
 
   collectd::plugin {'network':
     ensure   => $ensure,
-    content  => template('collectd/plugin/network.conf.erb'),
+    content  => template('collectd_plugins/plugin/network.conf.erb'),
     interval => $interval,
   }
   $defaults = {

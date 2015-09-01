@@ -19,6 +19,6 @@ define collectd_plugin::postgresql::query (
     ensure  => $ensure,
     order   => '30',
     target  => "${conf_dir}/postgresql-config.conf",
-    content => template('collectd/plugin/postgresql/query.conf.erb'),
+    content => template('collectd_plugins/plugin/postgresql/query.conf.erb'),
   }
 }

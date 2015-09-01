@@ -9,7 +9,7 @@ class collectd_plugin::ntpd (
 ) {
   collectd::plugin {'ntpd':
     ensure   => $ensure,
-    content  => template('collectd/plugin/ntpd.conf.erb'),
+    content  => template('collectd_plugins/plugin/ntpd.conf.erb'),
     interval => $interval,
   }
 }

@@ -15,6 +15,6 @@ define collectd_plugin::postgresql::writer (
     ensure  => $ensure,
     order   => '40',
     target  => "${conf_dir}/postgresql-config.conf",
-    content => template('collectd/plugin/postgresql/writer.conf.erb'),
+    content => template('collectd_plugins/plugin/postgresql/writer.conf.erb'),
   }
 }

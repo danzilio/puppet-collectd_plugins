@@ -19,7 +19,7 @@ class collectd_plugin::write_riemann (
 
   collectd::plugin {'write_riemann':
     ensure   => $ensure,
-    content  => template('collectd/plugin/write_riemann.conf.erb'),
+    content  => template('collectd_plugins/plugin/write_riemann.conf.erb'),
     interval => $interval,
   }
 }

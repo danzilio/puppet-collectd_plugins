@@ -27,7 +27,7 @@ class collectd_plugin::df (
 
   collectd::plugin {'df':
     ensure   => $ensure,
-    content  => template('collectd/plugin/df.conf.erb'),
+    content  => template('collectd_plugins/plugin/df.conf.erb'),
     interval => $interval,
   }
 }

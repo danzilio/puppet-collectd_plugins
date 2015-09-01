@@ -15,7 +15,7 @@ class collectd_plugin::cpu (
 
   collectd::plugin {'cpu':
     ensure   => $ensure,
-    content  => template('collectd/plugin/cpu.conf.erb'),
+    content  => template('collectd_plugins/plugin/cpu.conf.erb'),
     interval => $interval,
   }
 }

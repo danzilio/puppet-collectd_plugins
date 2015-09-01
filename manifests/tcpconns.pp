@@ -17,7 +17,7 @@ class collectd_plugin::tcpconns (
 
   collectd::plugin {'tcpconns':
     ensure   => $ensure,
-    content  => template('collectd/plugin/tcpconns.conf.erb'),
+    content  => template('collectd_plugins/plugin/tcpconns.conf.erb'),
     interval => $interval,
   }
 }

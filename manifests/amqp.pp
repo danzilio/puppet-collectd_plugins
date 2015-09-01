@@ -24,7 +24,7 @@ class collectd_plugin::amqp (
 
   collectd::plugin {'amqp':
     ensure   => $ensure,
-    content  => template('collectd/plugin/amqp.conf.erb'),
+    content  => template('collectd_plugins/plugin/amqp.conf.erb'),
     interval => $interval,
   }
 }

@@ -16,7 +16,7 @@ class collectd_plugin::swap (
 
   collectd::plugin {'swap':
     ensure   => $ensure,
-    content  => template('collectd/plugin/swap.conf.erb'),
+    content  => template('collectd_plugins/plugin/swap.conf.erb'),
     interval => $interval,
   }
 }

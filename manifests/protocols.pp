@@ -14,6 +14,6 @@ class collectd_plugin::protocols (
 
   collectd::plugin {'protocols':
     ensure  => $ensure,
-    content => template('collectd/plugin/protocols.conf.erb'),
+    content => template('collectd_plugins/plugin/protocols.conf.erb'),
   }
 }

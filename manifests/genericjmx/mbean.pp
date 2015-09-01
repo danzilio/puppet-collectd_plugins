@@ -11,7 +11,7 @@ define collectd_plugin::genericjmx::mbean (
   concat::fragment {
     "collectd_plugin_genericjmx_conf_${name}":
       order   => '10',
-      content => template('collectd/plugin/genericjmx/mbean.conf.erb'),
+      content => template('collectd_plugins/plugin/genericjmx/mbean.conf.erb'),
       target  => $collectd_plugin::genericjmx::config_file;
   }
 }

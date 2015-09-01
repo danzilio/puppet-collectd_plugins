@@ -32,7 +32,7 @@ define collectd_plugin::mysql::database (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/mysql-database.conf.erb'),
+    content => template('collectd_plugins/mysql-database.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

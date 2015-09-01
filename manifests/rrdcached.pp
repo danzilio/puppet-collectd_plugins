@@ -18,7 +18,7 @@ class collectd_plugin::rrdcached (
 
   collectd::plugin {'rrdcached':
     ensure   => $ensure,
-    content  => template('collectd/plugin/rrdcached.conf.erb'),
+    content  => template('collectd_plugins/plugin/rrdcached.conf.erb'),
     interval => $interval,
   }
 }

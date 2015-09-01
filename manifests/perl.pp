@@ -20,7 +20,7 @@ class collectd_plugin::perl (
     globals  => true,
     interval => $interval,
     order    => $order,
-    content  => template('collectd/plugin/perl.conf.erb'),
+    content  => template('collectd_plugins/plugin/perl.conf.erb'),
   }
 
   file { "${conf_dir}/perl":

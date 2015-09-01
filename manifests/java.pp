@@ -6,7 +6,7 @@ class collectd_plugin::java (
 ) {
   collectd::plugin { 'java':
     ensure   => $ensure,
-    content  => template('collectd/plugin/java.conf.erb'),
+    content  => template('collectd_plugins/plugin/java.conf.erb'),
     interval => $interval,
   }
 }

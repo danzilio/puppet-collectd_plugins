@@ -10,7 +10,7 @@ define collectd_plugin::genericjmx::connection (
   include collectd_plugin::genericjmx
   concat::fragment { "collectd_plugin_genericjmx_conf_${name}":
     order   => 20,
-    content => template('collectd/plugin/genericjmx/connection.conf.erb'),
+    content => template('collectd_plugins/plugin/genericjmx/connection.conf.erb'),
     target  => $collectd_plugin::genericjmx::config_file;
   }
 }

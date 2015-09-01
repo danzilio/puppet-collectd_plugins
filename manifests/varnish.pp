@@ -18,7 +18,7 @@ class collectd_plugin::varnish (
 
   collectd::plugin {'varnish':
     ensure   => $ensure,
-    content  => template('collectd/plugin/varnish.conf.erb'),
+    content  => template('collectd_plugins/plugin/varnish.conf.erb'),
     interval => $interval,
   }
 }

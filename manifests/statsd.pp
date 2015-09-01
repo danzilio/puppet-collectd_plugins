@@ -17,7 +17,7 @@ class collectd_plugin::statsd (
 
   collectd::plugin {'statsd':
     ensure   => $ensure,
-    content  => template('collectd/plugin/statsd.conf.erb'),
+    content  => template('collectd_plugins/plugin/statsd.conf.erb'),
     interval => $interval,
   }
 }

@@ -15,7 +15,7 @@ class collectd_plugin::iptables (
 
   collectd::plugin {'iptables':
     ensure   => $ensure,
-    content  => template('collectd/plugin/iptables.conf.erb'),
+    content  => template('collectd_plugins/plugin/iptables.conf.erb'),
     interval => $interval,
   }
 }

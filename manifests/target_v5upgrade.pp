@@ -4,7 +4,7 @@ class collectd_plugin::target_v5upgrade (
 ) {
   collectd::plugin {'target_v5upgrade':
     ensure  => $ensure,
-    content => template('collectd/plugin/target_v5upgrade.conf.erb'),
+    content => template('collectd_plugins/plugin/target_v5upgrade.conf.erb'),
     order   => '06',
   }
 }

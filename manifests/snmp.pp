@@ -13,7 +13,7 @@ class collectd_plugin::snmp (
 
   collectd::plugin {'snmp':
     ensure   => $ensure,
-    content  => template('collectd/plugin/snmp.conf.erb'),
+    content  => template('collectd_plugins/plugin/snmp.conf.erb'),
     interval => $interval,
   }
 }

@@ -10,7 +10,7 @@ class collectd_plugin::irq (
 
   collectd::plugin {'irq':
     ensure   => $ensure,
-    content  => template('collectd/plugin/irq.conf.erb'),
+    content  => template('collectd_plugins/plugin/irq.conf.erb'),
     interval => $interval,
   }
 }

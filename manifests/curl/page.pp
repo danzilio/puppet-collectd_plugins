@@ -30,7 +30,7 @@ define collectd_plugin::curl::page (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/plugin/curl-page.conf.erb'),
+    content => template('collectd_plugins/plugin/curl-page.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

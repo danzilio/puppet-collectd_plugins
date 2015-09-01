@@ -65,7 +65,7 @@ class collectd_plugin::python (
 
   concat::fragment{'collectd_plugin_python_conf_header':
     order   => '00',
-    content => template('collectd/plugin/python/header.conf.erb'),
+    content => template('collectd_plugins/plugin/python/header.conf.erb'),
     target  => $python_conf,
   }
 

@@ -21,7 +21,7 @@ define collectd_plugin::snmp::host (
     owner   => 'root',
     group   => $root_group,
     mode    => '0640',
-    content => template('collectd/plugin/snmp/host.conf.erb'),
+    content => template('collectd_plugins/plugin/snmp/host.conf.erb'),
     notify  => Class['collectd::service'];
   }
 }

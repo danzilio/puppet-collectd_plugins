@@ -15,7 +15,7 @@ class collectd_plugin::apache (
 
   collectd::plugin {'apache':
     ensure   => $ensure,
-    content  => template('collectd/plugin/apache.conf.erb'),
+    content  => template('collectd_plugins/plugin/apache.conf.erb'),
     interval => $interval,
   }
 }

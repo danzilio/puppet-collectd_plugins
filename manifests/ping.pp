@@ -27,7 +27,7 @@ define collectd_plugin::ping (
       owner   => 'root',
       group   => $root_group,
       mode    => '0644',
-      content => template('collectd/ping.conf.erb'),
+      content => template('collectd_plugins/ping.conf.erb'),
       notify  => Class['collectd::service'],
   }
 }

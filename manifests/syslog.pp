@@ -7,7 +7,7 @@ class collectd_plugin::syslog (
 
   collectd::plugin {'syslog':
     ensure   => $ensure,
-    content  => template('collectd/plugin/syslog.conf.erb'),
+    content  => template('collectd_plugins/plugin/syslog.conf.erb'),
     interval => $interval,
     # Load logging plugin first
     # https://github.com/puppet-community/puppet-collectd/pull/166#issuecomment-50591413

@@ -29,7 +29,7 @@ class collectd_plugin::libvirt (
 
   collectd::plugin { 'libvirt':
     ensure   => $ensure,
-    content  => template('collectd/plugin/libvirt.conf.erb'),
+    content  => template('collectd_plugins/plugin/libvirt.conf.erb'),
     interval => $interval,
   }
 }

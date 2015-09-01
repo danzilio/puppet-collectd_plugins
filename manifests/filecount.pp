@@ -14,7 +14,7 @@ class collectd_plugin::filecount (
     $content = undef
     create_resources(collectd_plugin::filecount::directory, $directories, {ensure => $ensure})
   } else {
-    $content = template('collectd/plugin/filecount.conf.erb')
+    $content = template('collectd_plugins/plugin/filecount.conf.erb')
   }
 
   collectd::plugin {'filecount':

@@ -12,7 +12,7 @@ class collectd_plugin::disk (
 
   collectd::plugin {'disk':
     ensure   => $ensure,
-    content  => template('collectd/plugin/disk.conf.erb'),
+    content  => template('collectd_plugins/plugin/disk.conf.erb'),
     interval => $interval,
   }
 }

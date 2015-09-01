@@ -31,7 +31,7 @@ define collectd_plugin::curl_json (
       owner   => 'root',
       group   => $root_group,
       mode    => '0640',
-      content => template('collectd/curl_json.conf.erb'),
+      content => template('collectd_plugins/curl_json.conf.erb'),
       notify  => Class['collectd::service'],
   }
 }

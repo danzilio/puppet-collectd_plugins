@@ -20,7 +20,7 @@ define collectd_plugin::snmp::data (
     owner   => 'root',
     group   => $root_group,
     mode    => '0640',
-    content => template('collectd/plugin/snmp/data.conf.erb'),
+    content => template('collectd_plugins/plugin/snmp/data.conf.erb'),
     notify  => Class['collectd::service'];
   }
 }

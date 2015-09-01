@@ -25,6 +25,6 @@ define collectd_plugin::write_graphite::carbon (
     ensure  => $ensure,
     order   => '50', # somewhere between header and footer
     target  => $collectd_plugin::write_graphite::graphite_conf,
-    content => template('collectd/plugin/write_graphite/carbon.conf.erb'),
+    content => template('collectd_plugins/plugin/write_graphite/carbon.conf.erb'),
   }
 }

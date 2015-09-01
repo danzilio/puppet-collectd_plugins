@@ -32,7 +32,7 @@ class collectd_plugin::bind (
 
   collectd::plugin {'bind':
     ensure   => $ensure,
-    content  => template('collectd/plugin/bind.conf.erb'),
+    content  => template('collectd_plugins/plugin/bind.conf.erb'),
     interval => $interval,
   }
 }

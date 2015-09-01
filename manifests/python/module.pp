@@ -36,6 +36,6 @@ define collectd_plugin::python::module (
     ensure  => $ensure,
     order   => '50', # somewhere between header and footer
     target  => $collectd_plugin::python::python_conf,
-    content => template('collectd/plugin/python/module.conf.erb'),
+    content => template('collectd_plugins/plugin/python/module.conf.erb'),
   }
 }

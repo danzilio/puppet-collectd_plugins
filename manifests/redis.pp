@@ -14,7 +14,7 @@ class collectd_plugin::redis (
 
   collectd::plugin {'redis':
     ensure   => $ensure,
-    content  => template('collectd/plugin/redis.conf.erb'),
+    content  => template('collectd_plugins/plugin/redis.conf.erb'),
     interval => $interval,
   }
 }

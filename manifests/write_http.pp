@@ -9,7 +9,7 @@ class collectd_plugin::write_http (
 
   collectd::plugin {'write_http':
     ensure   => $ensure,
-    content  => template('collectd/plugin/write_http.conf.erb'),
+    content  => template('collectd_plugins/plugin/write_http.conf.erb'),
     interval => $interval,
   }
 }

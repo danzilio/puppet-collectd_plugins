@@ -24,6 +24,6 @@ define collectd_plugin::exec::cmd (
     ensure  => $ensure,
     order   => '50', # somewhere between header and footer
     target  => $collectd_plugin::exec::exec_conf,
-    content => template('collectd/plugin/exec/cmd.conf.erb'),
+    content => template('collectd_plugins/plugin/exec/cmd.conf.erb'),
   }
 }

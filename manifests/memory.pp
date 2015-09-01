@@ -13,7 +13,7 @@ class collectd_plugin::memory (
 
   collectd::plugin {'memory':
     ensure   => $ensure,
-    content  => template('collectd/plugin/memory.conf.erb'),
+    content  => template('collectd_plugins/plugin/memory.conf.erb'),
     interval => $interval,
   }
 }

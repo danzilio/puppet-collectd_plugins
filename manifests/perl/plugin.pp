@@ -40,7 +40,7 @@ define collectd_plugin::perl::plugin (
   file { $filename:
     group   => $root_group,
     mode    => '0644',
-    content => template('collectd/plugin/perl/plugin.erb'),
+    content => template('collectd_plugins/plugin/perl/plugin.erb'),
   }
 
   case $provider {

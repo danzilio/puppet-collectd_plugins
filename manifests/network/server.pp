@@ -21,7 +21,7 @@ define collectd_plugin::network::server (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/plugin/network/server.conf.erb'),
+    content => template('collectd_plugins/plugin/network/server.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

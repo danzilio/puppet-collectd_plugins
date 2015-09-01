@@ -14,7 +14,7 @@ class collectd_plugin::chain (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/plugin/chain.conf.erb'),
+    content => template('collectd_plugins/plugin/chain.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

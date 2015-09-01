@@ -8,7 +8,7 @@ class collectd_plugin::logfile (
 ) {
   collectd::plugin { 'logfile':
     ensure   => $ensure,
-    content  => template('collectd/plugin/logfile.conf.erb'),
+    content  => template('collectd_plugins/plugin/logfile.conf.erb'),
     interval => $interval,
     # Load logging plugin first
     # https://github.com/puppet-community/puppet-collectd/pull/166#issuecomment-50591413

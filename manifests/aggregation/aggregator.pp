@@ -29,7 +29,7 @@ define collectd_plugin::aggregation::aggregator (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/plugin/aggregation-aggregator.conf.erb'),
+    content => template('collectd_plugins/plugin/aggregation-aggregator.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

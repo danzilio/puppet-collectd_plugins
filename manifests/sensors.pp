@@ -15,7 +15,7 @@ class collectd_plugin::sensors (
 
   collectd::plugin {'sensors':
     ensure   => $ensure,
-    content  => template('collectd/plugin/sensors.conf.erb'),
+    content  => template('collectd_plugins/plugin/sensors.conf.erb'),
     interval => $interval,
   }
 }

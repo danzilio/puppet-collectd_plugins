@@ -19,7 +19,7 @@ define collectd_plugin::network::listener (
     mode    => '0640',
     owner   => 'root',
     group   => $root_group,
-    content => template('collectd/plugin/network/listener.conf.erb'),
+    content => template('collectd_plugins/plugin/network/listener.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

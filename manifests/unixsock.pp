@@ -11,7 +11,7 @@ class collectd_plugin::unixsock (
 
   collectd::plugin {'unixsock':
     ensure   => $ensure,
-    content  => template('collectd/plugin/unixsock.conf.erb'),
+    content  => template('collectd_plugins/plugin/unixsock.conf.erb'),
     interval => $interval,
   }
 }

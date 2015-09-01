@@ -7,7 +7,7 @@ class collectd_plugin::memcached (
 ) {
   collectd::plugin {'memcached':
     ensure   => $ensure,
-    content  => template('collectd/plugin/memcached.conf.erb'),
+    content  => template('collectd_plugins/plugin/memcached.conf.erb'),
     interval => $interval,
   }
 }

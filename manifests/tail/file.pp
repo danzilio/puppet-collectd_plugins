@@ -21,7 +21,7 @@ define collectd_plugin::tail::file (
     mode    => '0644',
     owner   => 'root',
     group   => $collectd::params::root_group,
-    content => template('collectd/tail-file.conf.erb'),
+    content => template('collectd_plugins/tail-file.conf.erb'),
     notify  => Class['collectd::service'],
   }
 }

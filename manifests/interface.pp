@@ -11,7 +11,7 @@ class collectd_plugin::interface (
 
   collectd::plugin {'interface':
     ensure   => $ensure,
-    content  => template('collectd/plugin/interface.conf.erb'),
+    content  => template('collectd_plugins/plugin/interface.conf.erb'),
     interval => $interval,
   }
 }

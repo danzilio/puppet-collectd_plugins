@@ -18,7 +18,7 @@ class collectd_plugin::nginx (
 
   collectd::plugin {'nginx':
     ensure   => $ensure,
-    content  => template('collectd/plugin/nginx.conf.erb'),
+    content  => template('collectd_plugins/plugin/nginx.conf.erb'),
     interval => $interval,
   }
 }

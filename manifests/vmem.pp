@@ -6,7 +6,7 @@ class collectd_plugin::vmem (
 ) {
   collectd::plugin {'vmem':
     ensure   => $ensure,
-    content  => template('collectd/plugin/vmem.conf.erb'),
+    content  => template('collectd_plugins/plugin/vmem.conf.erb'),
     interval => $interval,
   }
 }

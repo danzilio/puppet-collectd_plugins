@@ -26,7 +26,7 @@ class collectd_plugin::openvpn (
 
   collectd::plugin {'openvpn':
     ensure   => $ensure,
-    content  => template('collectd/plugin/openvpn.conf.erb'),
+    content  => template('collectd_plugins/plugin/openvpn.conf.erb'),
     interval => $interval,
   }
 }
